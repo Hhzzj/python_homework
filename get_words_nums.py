@@ -16,5 +16,6 @@ def get_words_nums(filename):
     return words_nums
 
 
-filename = 'english.txt'
-print(get_words_nums(filename))
+if __name__ == '__main__':
+    filename = 'english.txt'
+    print(get_words_nums(filename))
