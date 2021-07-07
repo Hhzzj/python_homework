@@ -17,8 +17,8 @@ def add_num_to_pic(picture, num, color='red'):
         pos = (height-font_size-10, 0)
 
     canvas.text(pos, num, font=num_font, fill=color)  # 在右上角添加红色数字
-
     return picture
+
 
 if __name__ == '__main__':
     head_picture = Image.open("picture.jpg")  # 打开头像图片 close
