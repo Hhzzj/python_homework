@@ -3,16 +3,19 @@
 import random
 
 CHARS = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
+def get_a_activation_codes(len):
+    activation_code = ''
+    for l in range(len):
+        activation_code += random.choice(CHARS)
+    return activation_code
 
 def get_200_activation_codes(len):
     all_activation_codes = []
     for i in range(200):
-        activation_code = ''
-        for l in range(len):
-            activation_code += random.choice(CHARS)
+        activation_code = get_a_activation_codes(len)
         all_activation_codes.append(activation_code)
-
     return all_activation_codes
 
-keys = get_200_activation_codes(16)
-print(keys)
+if __name__ == '__main__':
+    keys = get_200_activation_codes(16)
+    print(keys)
