@@ -20,9 +20,9 @@ def add_num_to_pic(picture, num, color='red'):
 
     return picture
 
-
-head_picture = Image.open("picture.jpg")  # 打开头像图片 close
-num = str(random.randint(0, 100))  # 随机一个要显示的红色数字的数值大小
-add_num_to_pic(head_picture, num)
-head_picture.save("picture1.jpg")  # 保存图片
-head_picture.close()
+if __name__ == '__main__':
+    head_picture = Image.open("picture.jpg")  # 打开头像图片 close
+    num = str(random.randint(0, 100))  # 随机一个要显示的红色数字的数值大小
+    add_num_to_pic(head_picture, num)
+    head_picture.save("picture1.jpg")  # 保存图片
+    head_picture.close()
