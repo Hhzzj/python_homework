@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtJosephusCircle</class>
+ <widget class="QWidget" name="QtJosephusCircle">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>641</width>
+    <height>459</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>约瑟夫环</string>
+  </property>
+  <widget class="QPushButton" name="button_input_by_hand">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>180</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>手动录入人员信息</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_input_by_filepath">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>40</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>通过文件录入人员信息</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_show_josephus_circle">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>340</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>输出约瑟夫环</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="people_data_eidt">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>311</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>请输入人员的姓 名 编号(换行输入下一个人)</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="filepath">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>50</y>
+     <width>311</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>src\usecase\entity\peopledata\lastname&amp;firstname&amp;id.zip</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>src\usecase\entity\peopledata\lastname&amp;firstname&amp;id.csv</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>src\usecase\entity\peopledata\lastname&amp;firstname&amp;id.xls</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>请选择文件路径</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="interval_eidt">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>330</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>interval&gt;0</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="start_eidt">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>380</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>输入整数</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>330</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设置约瑟夫环步长</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>380</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设置约瑟夫环开始位置</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
